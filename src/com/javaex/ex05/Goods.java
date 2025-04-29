@@ -11,8 +11,8 @@ public class Goods {
 	
 	//메소드
 	//name 등록
-	public void setName(String n) {
-		name = n;
+	public void setName(String name) {
+		this.name = name;
 	}
 	//name 읽어오기
 	public String getName() {
@@ -20,8 +20,8 @@ public class Goods {
 	}
 	
 	//price 등록
-	public void setPrice(int p) {
-		price = p;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	//price 읽어오기
 	public int getPrice() {
@@ -31,8 +31,8 @@ public class Goods {
 	//정보 출력
 	public void showInfo() {
 		System.out.println("=====================");
-		System.out.println("이름: " + name);
-		System.out.println("가격: " + price);
+		System.out.println("이름: " + this.name);
+		System.out.println("가격: " + this.price);
 		System.out.println("=====================");
 	}
 	
