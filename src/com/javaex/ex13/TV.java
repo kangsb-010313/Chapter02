@@ -17,11 +17,9 @@ public class TV {
 		this.channel = channel;
 		this.volume = volume;
 		this.power = power;
+		System.out.println("Power(3)");
 	}
-	public TV(boolean power, int volume) {
-		this.power = power;
-		this.volume = volume;
-	}
+
 	
 	
 	
@@ -37,25 +35,29 @@ public class TV {
 	}
 
 	public void setPower(boolean on) {
-		if(on == true) {
-			this.power = true;
-		}else {
-			this.power = false;
+		power = on;
+		if(power == false) {
+			channel = 0;
+			volume = 0;
 		}
 	}
 	
-	public void setChannel(int channel) {
+	public void setChannel(int channel) { //채널 입력
 		this.channel = channel;
 	}
-	public void setChannel(boolean up) {
-		
+	public void setChannel(boolean up) { //채널 증감
+		if(up = true) {
+			channel++;
+		}
 	}
 	
-	public void setVolume(int volume) {
+	public void setVolume(int volume) { //볼륨 입력
 		this.volume = volume;
 	}
-	public void setVolume(boolean up) {
-
+	public void setVolume(boolean up) { //볼륨 증감
+		if(up == false) {
+			volume--;
+		}
 	}
 	
 	
