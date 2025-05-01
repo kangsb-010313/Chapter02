@@ -17,7 +17,6 @@ public class TV {
 		this.channel = channel;
 		this.volume = volume;
 		this.power = power;
-		System.out.println("Power(3)");
 	}
 
 	
@@ -57,15 +56,14 @@ public class TV {
 	public void setVolume(boolean up) { //볼륨 증감
 		if(up == false) {
 			volume--;
-		}
+		}	
 	}
 	
 	
 	
 	//메소드 일반
 	public void status() {
-		System.out.println("파워:" + power + " 채널:" + channel + " 볼륨:" + volume);
-		
+			System.out.println("파워:" + power + " 채널:" + channel + " 볼륨:" + volume);
 	}
 	
 	
