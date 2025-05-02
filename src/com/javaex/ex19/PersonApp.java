@@ -26,8 +26,10 @@ public class PersonApp {
 		System.out.println(s03.getSchoolName());
 		System.out.println(s03.getName());
 		System.out.println(s03.getAge());
-		
 		s03.showInfo();
+		
+		System.out.println("--------------------------");
+		System.out.println(s03.toString());
 	}
 
 }
