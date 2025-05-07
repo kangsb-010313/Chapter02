@@ -9,11 +9,12 @@ public class Point {
 
 	//생성자
 	public Point() {
-
+		System.out.println("Point()");
 	}
 	public Point(int x, int y) {
 		this.x = x;
 		this.y = y;
+		System.out.println("Point(2)");
 	}
 
 	
