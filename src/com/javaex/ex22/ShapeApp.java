@@ -41,6 +41,10 @@ public class ShapeApp {
 		Shape[] sArray = new Shape[3];
 		
 		//도형담기
+		//sArray[0] = t01; Shape <-- Triangle //자동으로 섞어쓰기가 됨 ==> 업캐스팅
+		
+		
+		
 		sArray[0] = st;
 		sArray[1] = sc;
 		sArray[2] = sr;
@@ -49,6 +53,19 @@ public class ShapeApp {
 		for(int i=0; i<sArray.length; i++) {
 			sArray[i].draw();
 		}
+		
+		//삼각형의 밑변
+		System.out.println(((Triangle)sArray[0]).getWidth());
+		//사각형의 가로
+		System.out.println(((Rectangle)sArray[2]).getWidth());
+		//원의 반지름
+		System.out.println(((Circle)sArray[1]).getRadius());
+		
+		/* 부모만 올리는 경우를 아예 막아버리기(abstract)
+		Shape s = new Shape("빨강", "빨강");
+		s.draw();
+		*/
+		
 		
 	}
 
